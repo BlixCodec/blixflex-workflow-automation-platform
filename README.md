@@ -14,6 +14,20 @@ customer data, or financial records. See [Security / Privacy Notes](#13-security
 > advice, and it makes **no** claims or guarantees about financial outcomes. Any figures in
 > screenshots or examples are illustrative sample data.
 
+## Live Preview
+
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-blixflex.com-2EA44F?style=for-the-badge)](https://blixflex.com)
+[![GitHub Case Study](https://img.shields.io/badge/GitHub-Case%20Study-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/BlixCodec/blixflex-workflow-automation-platform)
+
+- **Live demo / website:** https://blixflex.com
+- **GitHub case study:** https://github.com/BlixCodec/blixflex-workflow-automation-platform
+
+View the live BlixFlex interface/demo to see the operations dashboard, workflow structure,
+and UI/UX approach. This public preview uses sanitized/demo-safe data only.
+
+> BlixFlex is an operations/workflow platform — not financial advice, not a trading product,
+> and not a guarantee of outcomes.
+
 ## What this case study proves
 
 - **Operational workflow design** — converting fragmented manual processes into explicit states, roles, and automation.
