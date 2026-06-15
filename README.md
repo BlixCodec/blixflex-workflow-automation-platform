@@ -290,7 +290,8 @@ This repository is a sanitized case study. To produce it:
   payout records, or private URLs.
 - Code samples are **illustrative standalone reconstructions** — not copied production
   source — and reference no proprietary configuration.
-- Screenshots are **placeholders / mockups** with sample data only.
+- Screenshots are **real but sanitized** captures: customer names, emails, and sensitive
+  financial figures are **blurred/redacted** in-image; no raw PII or business figures are shown.
 
 Practices reflected in the underlying system: Supabase **Row-Level Security** for access
 control; **role-based** separation of admin/analyst/client workflows; **service-role-only**
@@ -305,20 +306,21 @@ A privacy/secrets scan was run before publishing; see
 
 ## 14. Screenshots
 
-Placeholder screenshots (sample/mock data only) live in [`screenshots/`](screenshots/):
+Real, **sanitized** product screenshots live in [`screenshots/`](screenshots/):
 
 | File | Shows |
 |---|---|
 | `01-dashboard.png` | Operations dashboard overview |
-| `02-cohort-onboarding.png` | Onboarding workflow + progress |
-| `03-account-tracking.png` | Account tracking & status |
-| `04-payout-review.png` | Payout eligibility review queue |
-| `05-admin-tools.png` | Admin tooling & permissions |
-| `06-discord-automation.png` | Discord community automation |
+| `02-cohort-onboarding.png` | Onboarding workflow + automated reminders |
+| `03-account-tracking.png` | Client Flow — account lifecycle tracking |
+| `04-payout-review.png` | Payout review queue (human-in-the-loop) |
+| `05-admin-tools.png` | Automation Health (admin/system tooling) |
+| `06-discord-automation.png` | Discord webhook automation (event + scheduled) |
 
-> Real product screenshots will be added after they are captured with sanitized demo data.
-> Current placeholders are intentionally generic and do not contain PII, account numbers,
-> or figures readable as financial results.
+> These are real captures from the admin platform, **sanitized in-image**: customer names,
+> emails, and sensitive financial figures (P&L, payout totals, balances) are blurred. UI
+> structure and workflow remain visible; no raw PII or business figures are shown. See
+> [`screenshots/README.md`](screenshots/README.md) for the sanitization method.
 
 ---
 
