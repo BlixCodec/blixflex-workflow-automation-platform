@@ -10,7 +10,7 @@ contains customer PII (names, emails, account numbers) or real financial figures
 | `03-account-tracking.png` | Account tracking & status | Placeholder |
 | `04-payout-review.png` | Payout eligibility review queue | Placeholder |
 | `05-admin-tools.png` | Automation Health (admin/system tooling) | Real capture — no PII |
-| `06-discord-automation.png` | Platform Links (Discord integration config) | Real capture — no PII |
+| `06-discord-automation.png` | Discord webhook automation (event + scheduled webhooks) | Real capture — no PII |
 
 ## Notes
 
