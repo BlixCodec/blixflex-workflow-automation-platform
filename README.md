@@ -306,21 +306,34 @@ A privacy/secrets scan was run before publishing; see
 
 ## 14. Screenshots
 
-Real, **sanitized** product screenshots live in [`screenshots/`](screenshots/):
+Real, **sanitized** product screenshots from the admin platform. Customer names, emails,
+and sensitive financial figures (P&L, payout totals, balances) are **blurred in-image**;
+UI structure and workflow remain visible. See
+[`screenshots/README.md`](screenshots/README.md) for the sanitization method.
 
-| File | Shows |
-|---|---|
-| `01-dashboard.png` | Operations dashboard overview |
-| `02-cohort-onboarding.png` | Onboarding workflow + automated reminders |
-| `03-account-tracking.png` | Client Flow — account lifecycle tracking |
-| `04-payout-review.png` | Payout review queue (human-in-the-loop) |
-| `05-admin-tools.png` | Automation Health (admin/system tooling) |
-| `06-discord-automation.png` | Discord webhook automation (event + scheduled) |
+**Operations dashboard overview**
 
-> These are real captures from the admin platform, **sanitized in-image**: customer names,
-> emails, and sensitive financial figures (P&L, payout totals, balances) are blurred. UI
-> structure and workflow remain visible; no raw PII or business figures are shown. See
-> [`screenshots/README.md`](screenshots/README.md) for the sanitization method.
+![Operations dashboard overview](screenshots/01-dashboard.png)
+
+**Cohort onboarding workflow + automated reminders**
+
+![Cohort onboarding workflow and automated reminders](screenshots/02-cohort-onboarding.png)
+
+**Account tracking — Client Flow lifecycle**
+
+![Account tracking via Client Flow lifecycle](screenshots/03-account-tracking.png)
+
+**Payout review queue (human-in-the-loop)**
+
+![Payout review queue](screenshots/04-payout-review.png)
+
+**Admin tooling — Automation Health**
+
+![Automation Health admin tooling](screenshots/05-admin-tools.png)
+
+**Discord webhook automation (event + scheduled)**
+
+![Discord webhook automation](screenshots/06-discord-automation.png)
 
 ---
 
