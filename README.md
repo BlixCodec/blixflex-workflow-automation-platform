@@ -6,7 +6,7 @@
 
 **This is a sanitized portfolio / case-study repository.** It documents the design and
 selected implementation of a private production system. It contains illustrative code
-samples, sanitized examples, diagrams, and placeholder screenshots only — no secrets,
+samples, sanitized examples, diagrams, and sanitized (redacted) screenshots only — no secrets,
 customer data, or financial records. See [Security / Privacy Notes](#13-security--privacy-notes).
 
 > **Scope note:** BlixFlex is an *operations and workflow* tool. It coordinates people,
