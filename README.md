@@ -1,4 +1,4 @@
-# BlixFlex — AI-Assisted Workflow Automation & Operations Platform
+# BlixFlex — Workflow Automation & Operations Platform
 
 > A cohort-based operations platform that consolidates onboarding, workflow automation,
 > account tracking, risk/rule logic, reporting, payout review, and Discord community
@@ -13,6 +13,13 @@ customer data, or financial records. See [Security / Privacy Notes](#13-security
 > records, and process. It is **not** a trading system, an investment product, or financial
 > advice, and it makes **no** claims or guarantees about financial outcomes. Any figures in
 > screenshots or examples are illustrative sample data.
+
+## What this case study proves
+
+- **Operational workflow design** — converting fragmented manual processes into explicit states, roles, and automation.
+- **Role-based product thinking** — separate client, analyst, and admin workflows with data-layer access control.
+- **Automation with human review** — eligibility checks, notifications, and payout review workflows designed around auditability.
+- **Reporting and handoff** — dashboards, exports, runbooks, and project-memory notes for future operators.
 
 ---
 
@@ -309,9 +316,9 @@ Placeholder screenshots (sample/mock data only) live in [`screenshots/`](screens
 | `05-admin-tools.png` | Admin tooling & permissions |
 | `06-discord-automation.png` | Discord community automation |
 
-> Intentionally generic placeholders. Replace with sanitized real captures (sample data
-> only — no PII, account numbers, or figures readable as financial results) before sharing
-> externally.
+> Real product screenshots will be added after they are captured with sanitized demo data.
+> Current placeholders are intentionally generic and do not contain PII, account numbers,
+> or figures readable as financial results.
 
 ---
 
