@@ -1,23 +1,26 @@
 # Screenshots
 
-A mix of **real, sanitized product captures** and **generic placeholders**. No image
-contains customer PII (names, emails, account numbers) or real financial figures.
+Real, **sanitized** product captures from the live admin platform. Customer PII (names,
+emails, initials) and sensitive financial figures (P&L, payout totals, wallet balances)
+are **blurred/redacted** in-image. No raw customer data or business figures are exposed.
 
-| File | Screen | Type |
+| File | Screen | Notes |
 |---|---|---|
-| `01-dashboard.png` | Operations dashboard overview | Placeholder |
-| `02-cohort-onboarding.png` | Onboarding workflow + progress | Placeholder |
-| `03-account-tracking.png` | Account tracking & status | Placeholder |
-| `04-payout-review.png` | Payout eligibility review queue | Placeholder |
+| `01-dashboard.png` | Operations dashboard overview | Real capture — financials + names blurred |
+| `02-cohort-onboarding.png` | Onboarding workflow + automated reminders | Real capture — counts/PII blurred |
+| `03-account-tracking.png` | Client Flow — account lifecycle tracking | Real capture — client names/emails blurred |
+| `04-payout-review.png` | Payout review queue (human-in-the-loop) | Real capture — payout total blurred |
 | `05-admin-tools.png` | Automation Health (admin/system tooling) | Real capture — no PII |
-| `06-discord-automation.png` | Discord webhook automation (event + scheduled webhooks) | Real capture — no PII |
+| `06-discord-automation.png` | Discord webhook automation (event + scheduled) | Real capture — no PII |
 
-## Notes
+## Sanitization method
 
-- **05 and 06** are real product screens chosen specifically because they contain **no
-  customer data** — automation/system health stats and external-link configuration only.
-- **01–04** remain generic placeholders. The real versions of these screens contain
-  customer PII and/or business figures, so they will be added later only after being
-  captured with **sanitized demo data** (or with PII and figures redacted).
-- When replacing the remaining placeholders, use **sample / mock data only** — no real
-  names, emails, account numbers, payout records, or figures readable as financial results.
+- Person names, email addresses, and avatar initials are blurred in `01`–`04`.
+- Real money figures (P&L, payouts paid out, wallet/escrow balances) are blurred so no
+  actual revenue, payout, or balance values are readable.
+- `05` and `06` were chosen because they contain **no** customer data to begin with —
+  automation/system health and webhook configuration only.
+- The operator's own profile avatar is blurred for consistency.
+
+> These are intentionally redacted for public review. Workflow structure, labels, and the
+> operational flow remain visible; sensitive values do not.
