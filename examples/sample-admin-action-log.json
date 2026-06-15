@@ -1,0 +1,65 @@
+{
+  "$comment": "Illustrative sample audit log. Synthetic data — no real users, ids, emails, or records.",
+  "auditLog": [
+    {
+      "id": "audit_sample_0001",
+      "at": "2026-02-10T12:32:11Z",
+      "actorRole": "admin",
+      "actorId": "admin_sample_01",
+      "action": "application.approved",
+      "targetType": "application",
+      "targetId": "app_sample_4521",
+      "metadata": { "previousStatus": "pending", "newStatus": "approved", "via": "manual_review" }
+    },
+    {
+      "id": "audit_sample_0002",
+      "at": "2026-02-10T12:33:05Z",
+      "actorRole": "system",
+      "actorId": "automation",
+      "action": "onboarding.created",
+      "targetType": "onboarding",
+      "targetId": "onb_sample_4521",
+      "metadata": { "triggeredBy": "application.approved", "initialStep": "account_setup" }
+    },
+    {
+      "id": "audit_sample_0003",
+      "at": "2026-02-11T09:15:42Z",
+      "actorRole": "admin",
+      "actorId": "admin_sample_02",
+      "action": "permission.granted",
+      "targetType": "admin_permission",
+      "targetId": "perm_sample_77",
+      "metadata": { "grantedTo": "admin_sample_03", "section": "payouts", "canView": true, "canEdit": true, "canDelete": false }
+    },
+    {
+      "id": "audit_sample_0004",
+      "at": "2026-02-12T16:48:20Z",
+      "actorRole": "admin",
+      "actorId": "admin_sample_03",
+      "action": "payout.approved",
+      "targetType": "payout_review",
+      "targetId": "payrev_sample_0001",
+      "metadata": { "decision": "approved", "computedAmount": 240.0, "eligibilitySnapshotId": "payrev_sample_0001" }
+    },
+    {
+      "id": "audit_sample_0005",
+      "at": "2026-02-12T16:48:21Z",
+      "actorRole": "system",
+      "actorId": "automation",
+      "action": "notification.queued",
+      "targetType": "notification",
+      "targetId": "notif_sample_9001",
+      "metadata": { "channel": ["in_app", "email", "push"], "triggeredBy": "payout.approved" }
+    },
+    {
+      "id": "audit_sample_0006",
+      "at": "2026-02-13T08:00:00Z",
+      "actorRole": "system",
+      "actorId": "automation",
+      "action": "job.completed",
+      "targetType": "scheduled_job",
+      "targetId": "onboarding-reminders",
+      "metadata": { "processed": 12, "remindersSent": 4, "failures": 0 }
+    }
+  ]
+}

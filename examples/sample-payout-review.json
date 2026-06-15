@@ -1,0 +1,50 @@
+{
+  "$comment": "Illustrative sample only. Synthetic data. 'Payout' here is an operational workflow record, not a financial return or guaranteed outcome. Figures are sample values.",
+  "review": {
+    "reviewId": "payrev_sample_0001",
+    "participantId": "ptcpt_sample_c3",
+    "programId": "program_sample_standard",
+    "generatedAt": "2026-02-10T12:00:00Z",
+    "status": "eligible_pending_review"
+  },
+  "rulesetApplied": {
+    "minQualifyingDays": 5,
+    "consistencyMaxDayPercent": 40,
+    "cooldownDays": 14,
+    "minimumPayoutAmount": 100,
+    "splitPercent": 80
+  },
+  "recordSnapshot": {
+    "qualifyingDays": 9,
+    "largestSingleDaySharePercent": 28,
+    "daysSinceLastPayout": 21,
+    "computedAmount": 240.0,
+    "withinComplianceLimits": true
+  },
+  "evaluation": {
+    "eligible": true,
+    "checks": [
+      { "rule": "minQualifyingDays", "passed": true, "detail": "9 of minimum 5" },
+      { "rule": "consistency", "passed": true, "detail": "28% <= 40% max single-day share" },
+      { "rule": "cooldown", "passed": true, "detail": "21 days >= 14 day cooldown" },
+      { "rule": "compliance", "passed": true, "detail": "within configured operational limits" },
+      { "rule": "minimumAmount", "passed": true, "detail": "computed 240.00 >= minimum 100.00" }
+    ],
+    "failureReasons": []
+  },
+  "humanReview": {
+    "required": true,
+    "decision": null,
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "note": "Awaiting admin approval. Approval will be recorded with reviewer id and timestamp."
+  },
+  "exampleRejectedCase": {
+    "$comment": "Shows the structured failure shape.",
+    "eligible": false,
+    "failureReasons": [
+      { "rule": "cooldown", "detail": "6 days < 14 day cooldown" },
+      { "rule": "minimumAmount", "detail": "computed 60.00 < minimum 100.00" }
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "$comment": "Illustrative sample only. Sanitized synthetic data — no real participants, ids, or records.",
+  "cohort": {
+    "id": "cohort_sample_0001",
+    "name": "Sample Cohort — Q1",
+    "status": "active",
+    "capacity": 25,
+    "enrolled": 18,
+    "waitlist": 3,
+    "startsOn": "2026-01-15",
+    "endsOn": "2026-03-15"
+  },
+  "onboardingSteps": [
+    { "key": "application_approved", "label": "Application approved", "order": 1 },
+    { "key": "account_setup", "label": "Account setup", "order": 2 },
+    { "key": "agreement_signed", "label": "Agreement signed", "order": 3 },
+    { "key": "payment_complete", "label": "Payment complete", "order": 4 },
+    { "key": "discord_linked", "label": "Community access linked", "order": 5 },
+    { "key": "orientation_done", "label": "Orientation completed", "order": 6 },
+    { "key": "tracking_active", "label": "Account tracking active", "order": 7 },
+    { "key": "fully_onboarded", "label": "Fully onboarded", "order": 8 }
+  ],
+  "participants": [
+    {
+      "participantId": "ptcpt_sample_a1",
+      "displayName": "Participant A",
+      "currentStep": "discord_linked",
+      "completedSteps": ["application_approved", "account_setup", "agreement_signed", "payment_complete"],
+      "progressPercent": 50,
+      "stalled": false,
+      "lastActivityAt": "2026-01-20T14:05:00Z",
+      "remindersSent": 1
+    },
+    {
+      "participantId": "ptcpt_sample_b2",
+      "displayName": "Participant B",
+      "currentStep": "payment_complete",
+      "completedSteps": ["application_approved", "account_setup", "agreement_signed"],
+      "progressPercent": 37,
+      "stalled": true,
+      "stalledSinceDays": 4,
+      "lastActivityAt": "2026-01-16T09:30:00Z",
+      "remindersSent": 2
+    },
+    {
+      "participantId": "ptcpt_sample_c3",
+      "displayName": "Participant C",
+      "currentStep": "fully_onboarded",
+      "completedSteps": [
+        "application_approved", "account_setup", "agreement_signed", "payment_complete",
+        "discord_linked", "orientation_done", "tracking_active", "fully_onboarded"
+      ],
+      "progressPercent": 100,
+      "stalled": false,
+      "lastActivityAt": "2026-01-19T18:42:00Z",
+      "remindersSent": 0
+    }
+  ],
+  "automation": {
+    "reminderJob": "onboarding-reminders",
+    "reminderCadence": "daily",
+    "stalledThresholdDays": 3,
+    "nextRunAt": "2026-01-21T08:00:00Z"
+  }
+}

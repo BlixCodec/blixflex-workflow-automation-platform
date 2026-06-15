@@ -1,0 +1,16 @@
+{
+  "name": "blixflex-workflow-automation-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sanitized portfolio / case study: BlixFlex workflow automation & operations platform. Contains documentation and illustrative TypeScript code samples only.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
